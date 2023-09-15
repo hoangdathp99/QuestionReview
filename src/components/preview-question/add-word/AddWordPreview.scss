@@ -1,0 +1,12 @@
+.body-modal-blue .questions .input-preview{
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    &:disabled{
+        background-color: white;
+        border-color: rgb(80,80,80,0.8);
+    }
+}
+.body-modal-blue .questions p {
+    margin-bottom: 10px;
+}

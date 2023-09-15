@@ -1,0 +1,79 @@
+.answer-wrapper {
+    display: flex;
+    padding-top: 36px;
+    // justify-content: space-between;
+    row-gap: 24px;
+    flex-wrap: wrap;
+
+    .answer {
+        width: 50%;
+        display: flex;
+        column-gap: 13px;
+        align-items: center;
+
+        .radio-button {
+            width: 20px;
+            height: 20px;
+            border: 2px solid;
+            border-radius: 100px;
+            border-color: #414B5B;
+            position: relative;
+
+            &.checked {
+                &:before {
+                    content: " ";
+                    width: 60%;
+                    height: 60%;
+                    position: absolute;
+                    border-radius: 100px;
+                    background: #414B5B;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    // z-index: 100000000000;
+                }
+
+            }
+        }
+
+        .check-button {
+            width: 22px;
+            height: 20px;
+            border: 1.5px solid #A1A1A1;
+            position: relative;
+
+            &.checked {
+                border-width: 0px;
+                border-radius: 4px;
+                background: #17C05B;
+
+                &:before {
+                    content: ' ';
+                    position: absolute;
+                    width: 7px;
+                    top: 40%;
+                    left: 50%;
+                    border-bottom: 2px solid #ffff;
+                    /* long arm */
+                    height: 11px;
+                    border-right: 2px solid #ffff;
+
+                    /* rotate the mirrored L to make it a checkbox */
+                    // transform: rotate(45deg);
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    // -o-transform: rotate(45deg);
+                    // -ms-transform: rotate(45deg);
+                    // -webkit-transform: rotate(45deg);
+
+                }
+            }
+        }
+    }
+}
+
+.questions {
+    p {
+        margin-bottom: 10px;
+    }
+    margin-bottom: 26px;
+}
